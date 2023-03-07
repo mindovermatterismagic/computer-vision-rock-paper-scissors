@@ -8,7 +8,9 @@ def get_user_choice():
     user_choice = input('Please enter rock, paper or scissors')
     return user_choice.capitalize()
 
+
 computer_choice = get_computer_choice()
+print(computer_choice)
 user_choice = get_user_choice()
 
 def get_winner(computer_choice, user_choice):
@@ -28,8 +30,8 @@ def get_winner(computer_choice, user_choice):
             print('You won!')
             winner = 'User'
         else:
-            print('Computer Wins')
-            winner = 'You lost'
+            print('You lost')
+            winner = 'Computer'
     elif computer_choice == 'Scissors':
         if user_choice == 'Rock':
             print('You won!')
