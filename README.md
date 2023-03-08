@@ -14,6 +14,27 @@ git clone git clone https://github.com/d4min/computer-vision-rock-paper-scissors
 
 ## Milestone 2
 
-Created and trained a deep learning model using Teachable Machine to recognise images of users gesturing rock, paper, scissors or nothing through the webcam. 
+- Created and trained a deep learning model using Teachable Machine to recognise images of users gesturing rock, paper, scissors or nothing through the webcam. 
+
+## Milestone 3
+
+- Used conda to create and install the dependencies required for the project.
+
+- First created a new virtual environment with conda where the dependencies would be installed. 
+
+```bash
+conda create --name computer_vision python
+```
+It is important to use an environment seperate from base becasue virtual environments let you have a stable, reproducible, and portable environment. You are in control of which packages versions are installed and when they are upgraded. You can have as many environments as you want and this reduces the likelihood of dependencies between projects clashing and causing errors. 
+
+```bash
+conda install pip
+conda install tensorflow opencv ipykernel
+```
+- I also exported the conda environment packages to a text file which is kept with the code to allow for other users to be able to install the required dependencies to work with the project.
+
+```bash
+conda list --explicit > requirements.txt
+```
 
 
