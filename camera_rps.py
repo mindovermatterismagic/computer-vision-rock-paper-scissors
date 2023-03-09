@@ -72,9 +72,26 @@ def get_winner(computer_choice, user_choice):
 
 def play():
 
-    computer_choice = get_computer_choice()
-    user_choice = get_prediction()
-
-    get_winner(computer_choice, user_choice)
+    computer_wins = 0
+    user_wins =  0
+    rounds_played = 0
+    while computer_wins < 3 and user_wins < 3 and rounds_played < 5:
+        computer_choice = get_computer_choice()
+        user_choice = get_prediction()
+        winner = get_winner(computer_choice, user_choice)
+        if winner == "Computer":
+            computer_wins += 1
+        elif winner == "User":
+            user_wins += 1
+        print(f"The computer has {computer_wins} wins!")
+        print(f"You have {user_wins} wins!")
+        rounds_played += 1
+    
+    if computer_wins == 3:
+        print("Sorry. You Lost")
+    elif user_wins == 3:
+        print("You won the game! Hurray!")
+    else:
+        print("It is a draw, nobody reached 3 wins within 5 rounds")
 
 play()
