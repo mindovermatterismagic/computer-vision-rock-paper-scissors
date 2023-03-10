@@ -43,5 +43,4 @@ def play():
 
     get_winner(computer_choice, user_choice)
 
-
 play()
