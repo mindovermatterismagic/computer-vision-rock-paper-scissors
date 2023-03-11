@@ -16,8 +16,6 @@ git clone git clone https://github.com/d4min/computer-vision-rock-paper-scissors
 
 - Created and trained a deep learning model using Teachable Machine to recognise images of users gesturing rock, paper, scissors or nothing through the webcam. 
 
-![Screenshot](images/TeachableMachine.png)
-
 ## Milestone 3
 
 - Used conda to create and install the dependencies required for the project.
