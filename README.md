@@ -142,7 +142,7 @@ while computer_wins < 3 and user_wins < 3 and rounds_played < 5:
 ```
 The rounds played is incremented with each round and the win counts are incremented depending on who wins. 
 
-- Used good OOP practices to define the computer_vision_rps class so that we can have multiple game objects. Included the functions used to play the game as methods.
+- Used good OOP practices to define the computer_vision_rps class. Included the functions used to play the game as methods.
 
 ```python
 class computer_vision_rps:
