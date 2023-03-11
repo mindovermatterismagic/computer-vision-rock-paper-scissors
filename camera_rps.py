@@ -47,7 +47,7 @@ class computer_vision_rps:
             print("You haven't picked an option please gesture Rock, Paper or Scissors")
             # If the prediction is "Nothing" the method is called again so the user
             # can make another input.
-            self.get_prediction(self)
+            self.get_prediction()
         else:
             print(f"You have chosen {rps_prediction}!")
             return rps_prediction
